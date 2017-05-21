@@ -26,3 +26,6 @@ hs_err_pid*
 
 ## File-based project format:
 *.iws
+
+# Maven artifacts
+target/
