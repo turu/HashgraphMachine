@@ -32,7 +32,14 @@
     </properties>
 
     <dependencies>
-        <!-- Test dependencies -->
+        <!-- Misc -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.21</version>
+        </dependency>
+
+        <!-- Tests -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>

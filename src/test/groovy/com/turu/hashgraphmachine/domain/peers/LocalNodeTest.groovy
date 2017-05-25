@@ -1,4 +1,4 @@
-package com.turu.hashgraphmachine.domain.nodes
+package com.turu.hashgraphmachine.domain.peers
 
 import com.turu.hashgraphmachine.domain.HashgraphEvent
 import spock.lang.Specification
@@ -7,10 +7,10 @@ import spock.lang.Specification
  * Created by turu on 21/05/17.
  */
 class LocalNodeTest extends Specification {
-    LocalNode localNode
+    LocalPeer localNode
 
     def setup() {
-        localNode = new LocalNode()
+        localNode = new LocalPeer(hashgraph, nodeRegistry, transactionSource)
     }
 
     def "acceptEvent should not fail given HashgraphEvent"() {
